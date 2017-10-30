@@ -34,8 +34,8 @@
 .title {
 	font-family: 'Work Sans', sans-serif;
 	text-align: center;
-	font-weight: 300;
-	font-size: 800%;
+	font-weight: 100;
+	font-size: 1000%;
 	color: white;
 	margin: 0 auto;
 	display: block;
@@ -45,7 +45,7 @@
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-weight: 300;
-	font-size: 150%;
+	font-size: 175%;
 	color: white;
 	margin: 0 auto;
 	padding-bottom: 25px;
@@ -73,12 +73,13 @@ hr {
 	margin: 25px;
 	margin-top: 50px;
 /*	background-color: #2f373f;*/
-	background-color: rgba(3, 3, 3, 0.7);
+	background-color: rgba(3, 3, 3, 0.3);
 	transition: all .2s;
 }
 
 .card:hover {
-	background-color: rgba(40, 40, 40, 0.7);
+	background-color: rgba(20, 20, 20, 0.8);
+    border: 2px solid white;
 }
 
 .card-image {
@@ -88,8 +89,8 @@ hr {
 }
 
 .card-title {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 	margin: 0;
 	text-decoration: none;
 	padding-top: 15px;
@@ -104,7 +105,7 @@ hr {
 	text-decoration: none;
 	padding-left: 15px;
 	padding-right: 15px;
-	font-size: 150%;
+	font-size: 125%;
 	color: white;
 }
 
