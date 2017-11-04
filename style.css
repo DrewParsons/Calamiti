@@ -1,22 +1,35 @@
 
-.background {
-	width: 101%;
-	height: 101%;
-	background-image: url("static/background.jpg");
+
+.box:before {
+	width: 100%;
+  height: 100%;
+    
+    content: "";
+
+  left: 0;
+  right: 0;
+  z-index: -1;
+    
+    display: block;
+	background-image: url("static/backgroundsmall.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
+   
+    filter:blur(5px);
+    -webkit-filter: blur(5px);
+    
 	position: fixed;
 	top: -.5%;
 	left: -.5%;
 	z-index: -1;
 }
 
+
+
+
+
 .box {
+    
 	background-size: cover;
     display: block;
     text-align: center;
@@ -39,10 +52,11 @@
 	margin: 0 auto;
 	display: block;
 	max-height: 200px;
+
 }
 
 .intro {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	text-align: center;
 	font-weight: 300;
 	font-size: 3vw;
@@ -50,6 +64,27 @@
 	margin: 0 auto;
 	padding-bottom: 25px;
 	display: block;
+        visibility: hidden;
+}
+
+.about-box{
+
+    padding: 10px;
+
+    height: 1000px;
+    margin: 0 auto;
+    background: white;
+   
+    
+}
+
+.about-title{
+    font-size: 6vw;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    visibility: hidden;
+    
 }
 
 hr {
@@ -107,6 +142,113 @@ hr {
 	padding-right: 15px;
 	font-size: 125%;
 	color: white;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-size: 6vw;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.fadeintitle {
+    animation-name: slideUpSmall;
+    -webkit-animation-name: slideUpSmall;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 12vmax;
+	color: white;
+	margin: 0 auto;
+	display: block;
+	max-height: 200px;
+}
+
+.fadeinintro {
+     animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 3vw;
+	color: white;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	display: block;
+}
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideUpSmall {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
 }
 
 
