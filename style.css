@@ -49,7 +49,7 @@
     color: white;
     margin: 0 auto;
     display: block;
-    max-height: 200px;
+
 
 }
 
@@ -147,7 +147,7 @@ hr {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-    font-size: 6vw;
+    font-size: 6vmax;
     margin-left: 10%;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
@@ -164,9 +164,7 @@ hr {
     font-weight: 100;
     font-size: 12vmax;
     color: white;
-    margin: 0 auto;
     display: block;
-    max-height: 200px;
 }
 
 .fadeinintro {
