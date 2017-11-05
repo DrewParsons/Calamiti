@@ -1,12 +1,14 @@
 
 
+
 .box:before {
 	width: 101%;
   height: 101%;
 
     content: "";
 
-    left: 0;
+    left: -5px;
+    top:-5px;
     right: 0;
     z-index: -1;
 
@@ -49,7 +51,6 @@
     color: white;
     margin: 0 auto;
     display: block;
-    max-height: 200px;
 
 }
 
@@ -60,7 +61,7 @@
     font-size: 3vw;
     color: white;
     margin: 0 auto;
-    padding-bottom: 25px;
+/*    padding-bottom: 25px;*/
     display: block;
     visibility: hidden;
 }
@@ -147,7 +148,7 @@ hr {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-    font-size: 6vw;
+    font-size: 6vmax;
     margin-left: 10%;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
@@ -164,9 +165,7 @@ hr {
     font-weight: 100;
     font-size: 12vmax;
     color: white;
-    margin: 0 auto;
     display: block;
-    max-height: 200px;
 }
 
 .fadeinintro {
@@ -181,7 +180,7 @@ hr {
     font-size: 3vw;
     color: white;
     margin: 0 auto;
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
     display: block;
 }
 

@@ -13,6 +13,8 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
+
+
         <div class="box">
 
             <div class="title-box">
@@ -79,6 +81,29 @@
             setTimeout(function(){
                 document.getElementById("intro-text").className = "fadeinintro"
             }, 1000 );
+
+
+var OFFSET = 0;
+function navbarController() {
+    var triggerPosition = $('.nav-trigger').position().top + OFFSET;
+    $(window).on("scroll", function () {
+            var scrollPosition = scrollY || pageYOffset;
+            if (scrollPosition > triggerPosition) {
+                console.log("triggered!")
+                $('header').addClass('nav-fixed');
+                var navHeight = $(".nav-container").css('height');
+                $('.nav-ghost').height(navHeight);
+                $('.nav-ghost').show();
+            } else {
+                $('header').removeClass('nav-fixed');
+            }
+
+
+        }
+    )
+    ;
+}
+
         </script>
 
 

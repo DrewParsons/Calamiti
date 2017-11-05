@@ -14,8 +14,8 @@
 <body>
 	<header class="calamiti-header">
 		<ul>
-			<li class="title btn btn-work">
-				<a href="home.html">calamiti</a>
+			<li class="title-header btn btn-work">
+				<a href="home.html">Calamiti</a>
 			</li>
 			<li class="child btn btn-work">
 				<a href="home.html">step-by-step</a>
@@ -31,7 +31,28 @@
 	</header>
 	
 
+<script>
+	var OFFSET = 7;
+function navbarController() {
+    var triggerPosition = $('.nav-trigger').position().top + OFFSET;
+    $(window).on("scroll", function () {
+            var scrollPosition = scrollY || pageYOffset;
+            if (scrollPosition > triggerPosition) {
+                console.log("triggered!")
+                $('header').addClass('nav-fixed');
+                var navHeight = $(".nav-container").css('height');
+                $('.nav-ghost').height(navHeight);
+                $('.nav-ghost').show();
+            } else {
+                $('header').removeClass('nav-fixed');
+            }
 
+
+        }
+    )
+    ;
+}
+</script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
