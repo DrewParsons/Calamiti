@@ -23,7 +23,10 @@
     align-items: center;
     min-height: 500px;
 }
-s
+
+.top-block{
+	height: 200px;
+}
 
 .search-box {
 	font-family: 'Work Sans', sans-serif;
@@ -55,6 +58,9 @@ hr {
 
 .selection-block {
 	display: block;	
+	text-align: center;
+	margin-left:100px;
+	margin-right:100px;
 }
 
 
@@ -62,11 +68,13 @@ hr {
 	text-decoration: none!important;
 	vertical-align: top;
 	align-items: center;
+	text-align:center;
 	display: inline-block;
-	height: 200px;
-	width: 200px;
-	margin: 25px;
-	margin-top: 50px;
+	height: 190px;
+	width: 190px;
+	margin: 50px;
+	margin-top: 30px;
+	margin-bottom: 0px;
 	background-color: rgba(3, 3, 3, 0.3);
 	transition: all .2s;
 }
