@@ -1,3 +1,47 @@
+nav {
+    top: 0;
+    position: fixed;
+    z-index: 11;
+}
+
+.nav-trigger {
+    position: absolute;
+    top: 0px;
+}
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.3s ease;
+    
+  
+}
+
+
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
 
 
