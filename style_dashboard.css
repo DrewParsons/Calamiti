@@ -23,29 +23,23 @@
     align-items: center;
     min-height: 500px;
 }
+s
 
-.title-box {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.title {
+.search-box {
 	font-family: 'Work Sans', sans-serif;
 	text-align: center;
 	font-weight: 100;
-	font-size: 12vmax;
+	font-size: 4vmax;
 	color: white;
 	margin: 0 auto;
 	display: block;
-	max-height: 200px;
 }
 
 .intro {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-weight: 300;
-	font-size: 3vw;
+	font-size: 1vw;
 	color: white;
 	margin: 0 auto;
 	padding-bottom: 25px;
@@ -69,8 +63,8 @@ hr {
 	vertical-align: top;
 	align-items: center;
 	display: inline-block;
-	height: 350px;
-	width: 350px;
+	height: 200px;
+	width: 200px;
 	margin: 25px;
 	margin-top: 50px;
 	background-color: rgba(3, 3, 3, 0.3);
@@ -83,8 +77,8 @@ hr {
 }
 
 .card-image {
-	height: 200px;
-	width: 200px;
+	height: 140px;
+	width: 140px;
 	padding: 25px;
 }
 
