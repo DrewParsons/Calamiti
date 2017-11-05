@@ -1,12 +1,14 @@
 
 
+
 .box:before {
 	width: 101%;
   height: 101%;
 
     content: "";
 
-    left: 0;
+    left: -5px;
+    top:-5px;
     right: 0;
     z-index: -1;
 
@@ -50,7 +52,6 @@
     margin: 0 auto;
     display: block;
     max-height: 200px;
-
 }
 
 .intro {
@@ -60,7 +61,7 @@
     font-size: 3vw;
     color: white;
     margin: 0 auto;
-    padding-bottom: 25px;
+/*    padding-bottom: 25px;*/
     display: block;
     visibility: hidden;
 }
@@ -166,7 +167,6 @@ hr {
     color: white;
     margin: 0 auto;
     display: block;
-    max-height: 200px;
 }
 
 .fadeinintro {
@@ -181,7 +181,7 @@ hr {
     font-size: 3vw;
     color: white;
     margin: 0 auto;
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
     display: block;
 }
 

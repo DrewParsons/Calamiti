@@ -1,6 +1,6 @@
 header {
 	font-family: 'Work Sans', sans-serif;
-	top: 0px;
+	top: 0;
     position: fixed;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ header ul li {
 }
 
 
-.title {
+.title-header {
 	font-size: 350%;
 	font-weight: 100;
 }
@@ -86,7 +86,7 @@ header a {
 	padding-top: 23px;
 }
 
-.title a:after {
+.title-header a:after {
   content : "";
   position: absolute;
   left    : 0;
