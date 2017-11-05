@@ -1,27 +1,25 @@
 
 
 .box:before {
-	width: 100%;
-  height: 100%;
-    
+    width: 100%;
+    height: 100%;
+
     content: "";
 
-  left: 0;
-  right: 0;
-  z-index: -1;
-    
+    left: 0;
+    right: 0;
+    z-index: -1;
+
     display: block;
-	background-image: url("static/backgroundsmall.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-   
+    background-image: url("static/backgroundsmall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
     filter:blur(5px);
     -webkit-filter: blur(5px);
-    
-	position: fixed;
-	top: -.5%;
-	left: -.5%;
-	z-index: -1;
+
+    position: fixed;
+
 }
 
 
@@ -29,8 +27,8 @@
 
 
 .box {
-    
-	background-size: cover;
+
+    background-size: cover;
     display: block;
     text-align: center;
     align-items: center;
@@ -44,27 +42,27 @@
 }
 
 .title {
-	font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	font-weight: 100;
-	font-size: 12vmax;
-	color: white;
-	margin: 0 auto;
-	display: block;
-	max-height: 200px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12vmax;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    max-height: 200px;
 
 }
 
 .intro {
-	font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	font-weight: 300;
-	font-size: 3vw;
-	color: white;
-	margin: 0 auto;
-	padding-bottom: 25px;
-	display: block;
-        visibility: hidden;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: block;
+    visibility: hidden;
 }
 
 .about-box{
@@ -74,8 +72,8 @@
     height: 1000px;
     margin: 0 auto;
     background: white;
-   
-    
+
+
 }
 
 .about-title{
@@ -84,64 +82,64 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
     visibility: hidden;
-    
+
 }
 
 hr {
-	width: 90%;
-	margin: 0 auto;
-	display: block;
-	border: 1px solid;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid;
 }
 
 .selection-block {
-	display: block;	
+    display: block;	
 }
 
 
 .card {
-	text-decoration: none!important;
-	vertical-align: top;
-	align-items: center;
-	display: inline-block;
-	height: 350px;
-	width: 350px;
-	margin: 25px;
-	margin-top: 50px;
-	background-color: rgba(3, 3, 3, 0.3);
-	transition: all .2s;
+    text-decoration: none!important;
+    vertical-align: top;
+    align-items: center;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    margin: 25px;
+    margin-top: 50px;
+    background-color: rgba(3, 3, 3, 0.3);
+    transition: all .2s;
 }
 
 .card:hover {
-	background-color: rgba(20, 20, 20, 0.8);
+    background-color: rgba(20, 20, 20, 0.8);
     border: 2px solid white;
 }
 
 .card-image {
-	height: 200px;
-	width: 200px;
-	padding: 25px;
+    height: 200px;
+    width: 200px;
+    padding: 25px;
 }
 
 .card-title {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	margin: 0;
-	text-decoration: none;
-	padding-top: 15px;
-	font-size: 200%;
-	color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: none;
+    padding-top: 15px;
+    font-size: 200%;
+    color: white;
 }
 
 .card-text {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	height: 150px;
-	text-decoration: none;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-size: 125%;
-	color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height: 150px;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 125%;
+    color: white;
 }
 
 .slideUp {
@@ -163,29 +161,29 @@ hr {
     -webkit-animation-duration: 1s;
     visibility: visible;
     font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	font-weight: 100;
-	font-size: 12vmax;
-	color: white;
-	margin: 0 auto;
-	display: block;
-	max-height: 200px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12vmax;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    max-height: 200px;
 }
 
 .fadeinintro {
-     animation-name: fadein;
+    animation-name: fadein;
     -webkit-animation-name: fadein;
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
     visibility: visible;
     font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	font-weight: 300;
-	font-size: 3vw;
-	color: white;
-	margin: 0 auto;
-	padding-bottom: 25px;
-	display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: block;
 }
 
 
