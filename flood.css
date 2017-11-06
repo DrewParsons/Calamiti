@@ -4,7 +4,8 @@ div.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 20%;
-    height: 400px;
+    height: 500px;
+    color: lightgrey;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -12,7 +13,7 @@ div.tab {
 div.tab button {
     display: block;
     background-color: inherit;
-    color: black;
+    color: lightgrey;
     padding: 22px 16px;
     width: 100%;
     border: none;
@@ -26,12 +27,12 @@ div.tab button {
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #ddd;
+    background-color: #8a8a8a;
 }
 
 /* Create an active/current "tab button" class */
 div.tab button.active {
-    background-color: #ccc;
+    background-color: #8a8a8a;
 }
 
 /* Style the tab content */
@@ -41,6 +42,13 @@ div.tab button.active {
     border: 1px solid #ccc;
     width: 75%;
     border-left: none;
-    height: 400px;
+    height: 500px;
     font-family: 'Work Sans', sans-serif;
+}
+
+.tabcontent h3 {
+    font-size: 600%;
+    text-align: center;
+    font-weight: 100;
+
 }

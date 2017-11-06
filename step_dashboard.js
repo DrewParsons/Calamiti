@@ -10,15 +10,21 @@ var $grid = $('.grid').isotope({
     return qsRegex ? $(this).text().match( qsRegex ) : true;
   }
 });
-console.log('initialized')
-console.log($grid)
-
 // use value of search field to filter
-var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+// var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+//   qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+//   $grid.isotope();
+// }, 200 ) );
+
+while(true) {
+  var $quicksearch = $('.quicksearch').keyup( debounce( function() {
   qsRegex = new RegExp( $quicksearch.val(), 'gi' );
   $grid.isotope();
 }, 200 ) );
 
+}
+
+console.log($quicksearch.val());
 // debounce so filtering doesn't happen every millisecond
 function debounce( fn, threshold ) {
   var timeout;
