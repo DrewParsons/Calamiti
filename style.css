@@ -16,8 +16,12 @@ nav {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-left: 10px;
-    transition: 0.4s all;
+    padding-left: 20px;
+    
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
 }
 
 .nav-trigger {
