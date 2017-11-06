@@ -1,4 +1,7 @@
 
+$(function(){
+   //your code here
+
 // quick search regex
 var qsRegex;
 
@@ -27,9 +30,10 @@ function debounce( fn, threshold ) {
       clearTimeout( timeout );
     }
     function delayed() {
-      fn();
-      timeout = null;
-    }
-    timeout = setTimeout( delayed, threshold || 100 );
-  }
+     fn();
+     timeout = null;
+   }
+   timeout = setTimeout( delayed, threshold || 100 );
+ }
 }
+});
