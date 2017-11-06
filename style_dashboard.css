@@ -16,6 +16,7 @@
 	z-index: -1;
 }
 
+
 .box {
 	background-size: cover;
     display: block;
@@ -32,11 +33,18 @@
 .search-box {
 	font-family: 'Work Sans', sans-serif;
 	text-align: center;
-	font-weight: 100;
-	font-size: 4vmax;
+
 	color: white;
 	margin: 0 auto;
 	display: block;
+    width: 80%;
+}
+
+.quicksearch{
+
+    width: 80%;
+    font-weight: 300;
+	font-size: 3vmax;
 }
 
 .intro {
@@ -113,6 +121,45 @@ hr {
   display: block;
   clear: both;
 }
+
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.5s ease;
+    
+  
+}
+
+
+
+
+.navbar{
+      padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
 
 
 
