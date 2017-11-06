@@ -25,7 +25,8 @@
 }
 
 .top-block{
-	height: 200px;
+	height: 150px;
+	margin-top: 50px;
 }
 
 .search-box {
@@ -56,7 +57,7 @@ hr {
 	border: 1px solid;
 }
 
-.selection-block {
+.grid {
 	display: block;	
 	text-align: center;
 	margin-left:100px;
@@ -64,7 +65,9 @@ hr {
 }
 
 
-.card {
+.element-item {
+	position: relative;
+  	float: left;
 	text-decoration: none!important;
 	vertical-align: top;
 	align-items: center;
@@ -79,7 +82,8 @@ hr {
 	transition: all .2s;
 }
 
-.card:hover {
+
+.element-item:hover {
 	background-color: rgba(20, 20, 20, 0.8);
     border: 2px solid white;
 }
@@ -90,7 +94,7 @@ hr {
 	padding: 25px;
 }
 
-.card-title {
+.name {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 	margin: 0;
@@ -100,16 +104,13 @@ hr {
 	color: white;
 }
 
-.card-text {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	height: 150px;
-	text-decoration: none;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-size: 125%;
-	color: white;
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
+
 
 
 
