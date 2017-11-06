@@ -2,7 +2,7 @@ $(document).ready(function () {
     navbarController();
 });
 
-var OFFSET = 200;
+var OFFSET = 400;
 function navbarController() {
     var triggerPosition = $('.nav-trigger').position().top + OFFSET;
     console.log(triggerPosition)
