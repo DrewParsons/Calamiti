@@ -2,7 +2,7 @@ $(document).ready(function () {
     navbarController();
 });
 
-var OFFSET = 0;
+var OFFSET = 200;
 function navbarController() {
     var triggerPosition = $('.nav-trigger').position().top + OFFSET;
     console.log(triggerPosition)
@@ -11,9 +11,9 @@ function navbarController() {
             if (scrollPosition > triggerPosition) {
                 console.log("triggered!")
 
-                $('nav').addClass('navbar-fixed-top');
+                $('nav').addClass('navbar-fixed-top').removeClass('navbar');
             } else {
-                $('header').removeClass('navbar-fixed-top');
+                $('nav').addClass('navbar').removeClass('navbar-fixed-top');
             }
 
 
