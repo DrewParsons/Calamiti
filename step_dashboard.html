@@ -12,33 +12,36 @@
 	<script type="text/javascript" src="step_dashboard.js"></script>
 
 </head>
+    
+    
+    	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">calamiti</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="home.html">home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="step_dashboard.html">step-by-step <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">news & info</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#">donate</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+	
+
 <body>
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-		<a class="navbar-brand" href="home.html">calamiti</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="home.html">home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item ">
-					<a class="nav-link" href="step_dashboard.html">step-by-step <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">news & info</a>
-				</li>
-
-				<li class="nav-item">
-					<a class="nav-link" href="#">donate</a>
-				</li>
-			</ul>
-
-		</div>
-	</nav>
 
 	<div class="box">
 
@@ -46,8 +49,10 @@
         <div class="fadeintitle">
             step-by-step guide
         </div>
-        <div class="search-box-before" id="search">
-				<p><input type="text" class="quicksearch bg-dark" placeholder="Filter"onfocus="this.placeholder=''";/></p>
+
+		<div class="top-block">
+			<div class="search-box">
+				<p><input type="text" class="quicksearch" placeholder="what crisis are you looking for?" onclick="this.placeholder=''"; /></p>
 			</div>
 
     </div>
@@ -89,13 +94,6 @@
 
 	<div class="background"></div>
 
-
-<script>
-	
-	    setTimeout(function(){
-        document.getElementById("search").className = "search-box"
-    }, 500 );
-</script>
 
 
 	<!-- 	Bootstrap required components -->

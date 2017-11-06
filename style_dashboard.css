@@ -75,6 +75,7 @@ transition: all 0.3s ease;
 	z-index: -1;
 }
 
+
 .box {
 	background-size: cover;
     display: block;
@@ -118,21 +119,10 @@ transition: all 0.3s ease;
 }
 
 .top-block{
-	height: 150px;
-	margin-top: 50px;
+	height: 75px;
+	margin-top: 25px;
 }
 
-.search-box-before {
-    visibility: hidden;
-	font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	font-weight: 100;
-	font-size: 3vmax;
-	color: white;
-	margin: 0 auto;
-	display: block;
-	border: none!important;
-}
 
 .search-box {
 	animation-name: fadein;
@@ -151,7 +141,7 @@ transition: all 0.3s ease;
 }
 
 input, select, textarea{
-    color: white;
+    color: black;
     font-weight: 100;
 }
 
@@ -161,31 +151,43 @@ textarea:focus, input:focus{
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    white;
+    color:    black;
     font-weight: 100;
     padding-left: 5px;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    white;
+   color:    black;
    opacity:  1;
    font-weight: 100;
    padding-left: 5px;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    white;
+   color:    black;
    opacity:  1;
    font-weight: 100;
    padding-left: 5px;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    white;
+   color:    black;
    font-weight: 100;
    padding-left: 5px;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color:    white;
+   color:    black;
    font-weight: 100;
    padding-left: 5px;
+
+	color: black;
+	margin: 0 auto;
+	display: block;
+    width: 80%;
+}
+
+.quicksearch{
+
+    width: 80%;
+    font-weight: 300;
+	font-size: 3vmax;
 }
 
 .intro {
@@ -210,23 +212,28 @@ hr {
 
 
 .grid {
-	display: block;	
+	display: flex;
+    justify-content:space-between;
+    align-items: center;
+	text-align: center;
+	margin:0 auto;
 }
 
 
 .element-item {
-	position: relative;
-  	float: left;
+	margin: 15px;
+    
 	text-decoration: none!important;
 	vertical-align: top;
 	align-items: center;
 	text-align:center;
-	display: inline-block;
-	height: 190px;
-	width: 190px;
-	margin: 50px;
-	margin-top: 30px;
-	margin-bottom: 0px;
+
+
+	height: 250px;
+	width: 250px;
+
+
+
 	background-color: rgba(3, 3, 3, 0.3);
     transition: border 0.4s ease;
     transition: background-color 0.4s ease;
@@ -261,6 +268,45 @@ hr {
   display: block;
   clear: both;
 }
+
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.5s ease;
+    
+  
+}
+
+
+
+
+.navbar{
+      padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
 
 
 
