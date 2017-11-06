@@ -10,6 +10,8 @@ var $grid = $('.grid').isotope({
     return qsRegex ? $(this).text().match( qsRegex ) : true;
   }
 });
+console.log('initialized')
+console.log($grid)
 
 // use value of search field to filter
 var $quicksearch = $('.quicksearch').keyup( debounce( function() {
