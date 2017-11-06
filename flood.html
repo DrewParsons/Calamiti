@@ -11,10 +11,39 @@
 </header>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="home.html">calamiti</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="step_dashboard.html">step-by-step <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">news & info</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">donate</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+<div class="box">
   <div class="tab bg-dark">
-    <button class="tablinks" onclick="openTime(event, 'Before')" id="defaultOpen">Before</button>
-    <button class="tablinks" onclick="openTime(event, 'During')">During</button>
-    <button class="tablinks" onclick="openTime(event, 'After')">After</button>
+    <button class="tablinks" onclick="openTime(event, 'Before')" id="defaultOpen">before</button>
+    <button class="tablinks" onclick="openTime(event, 'During')">during</button>
+    <button class="tablinks" onclick="openTime(event, 'After')">after</button>
   </div>
 
   <div id="Before" class="tabcontent">
@@ -36,14 +65,16 @@
   </div>
 
   <div id="During" class="tabcontent">
-    <h3>During</h3>
+    <h3>during</h3>
     <p>Insert "During" Information.</p> 
   </div>
 
   <div id="After" class="tabcontent">
-    <h3>After</h3>
+    <h3>after</h3>
     <p>Insert "After" Information.</p>
   </div>
+</div>
+
 
   <script src="Flood.js"></script>
 </body>
