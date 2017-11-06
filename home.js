@@ -12,9 +12,6 @@ function navbarController() {
                 console.log("triggered!")
 
                 $('nav').addClass('navbar-fixed-top');
-                var navHeight = $(".nav-container").css('height');
-                $('.nav-ghost').height(navHeight);
-                $('.nav-ghost').show();
             } else {
                 $('header').removeClass('navbar-fixed-top');
             }
