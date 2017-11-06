@@ -19,13 +19,11 @@ var $grid = $('.grid').isotope({
 //   $grid.isotope();
 // }, 200 ) );
 
-while(true) {
   var $quicksearch = $('.quicksearch').keyup( debounce( function() {
   qsRegex = new RegExp( $quicksearch.val(), 'gi' );
   $grid.isotope();
 }, 200 ) );
 
-}
 
 console.log($quicksearch.val());
 // debounce so filtering doesn't happen every millisecond
